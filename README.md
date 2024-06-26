@@ -1,3 +1,5 @@
+# Datový model pro reporting pro pobočkovou síť
+## Vypracoval: David Mûller
 ![datovy_model](CSOB_ukol.jpg "datovy_model")
 Každá tabulka musí obsahovat minimálně jeden sloupec, který bude unikátní - Bude mít primírní klíč
 
