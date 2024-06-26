@@ -1,3 +1,4 @@
+![datovy_model](CSOB_ukol.jpg "datovy_model")
 Každá tabulka musí obsahovat minimálně jeden sloupec, který bude unikátní - Bude mít primírní klíč
 
 Primární klíče byly zvoleny následující:
