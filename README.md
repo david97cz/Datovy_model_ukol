@@ -26,10 +26,23 @@ Cizí klíče jsou následující:
 - Id pobočky v tabulce WORKER Odkazuje na id pobočky v tabulce BRANCH. -  Zajistí, že každý zaměstnanec je přiřazen existující pobočce.
 
 Pro přehled nově prodaných produktů v členění dle zaměstananců lze použít následující SELECT příkaz:
+
 ```sql
-SELECT *
-FROM ACCOUNTS
-WHERE cid = 'konktertni_klient'
+SELECT
+    acn AS product_id
+FROM
+    ACCOUNTS
+WHERE
+    zam = @konkretni_zam
+
+UNION ALL
+
+SELECT
+    lid AS product_id
+FROM
+    LOANS
+WHERE
+   zam = @konkretni_zam
 ```
 
 Pro zajištění možnosti reportovat data zpětně lze využít koncept tzv. dočasných tabulek (temporal tables)
