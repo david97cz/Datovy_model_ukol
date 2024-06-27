@@ -7,7 +7,7 @@ Každá tabulka musí obsahovat minimálně jeden sloupec, který bude unikátn�
 Primární klíče jsem zvolil následující:
 
 - Tabulka ACCOUNTS -  acn - číslo účtu musí být unikátní
-- Tabulka LOANS -  vytvořil bych nový sloupec lid (Id půjčky), který by zajišťoval, ža každý záznam bude unikátní
+- Tabulka LOANS -  vytvořil bych nový sloupec lid - Id půjčky, který by zajišťoval, ža každý záznam bude unikátní. Teoreticky by se mohlo stát, že bude existovat více záznamů LOANS se stejným číslem účtu.
 - Tabulka CLIENT - cid - id klienta
 - Tabulka BRANCH - pob - id pobočky
 - Tabulka WORKER - zam - id zaměstance
