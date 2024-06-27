@@ -53,3 +53,6 @@ Pro zajištění možnosti reportovat data zpětně lze využít koncept tzv. do
 Pro prezentaci výsledných reportů je vhodné využít nástroje business intelligence (BI) - například Power BI od Microsoftu. Lze využít filtrování dat, jak jsem popisoval výše. Požadovaná data si lze ukládat do takzvaných pohledů (VIEW), díky čemuž se s nimi bude lépe pracovat při prezentaci.
 
 Dalším prvkem, který by se ještě hodilo zmínit jsou uložené procedury (STORED PROCEDURES). Jsou to posloupnosti SQL příkazů, které významně usnadní práci s datovým modelem. Například pokud se bude odstraňovat záznam z tabulky klient, je potřeba odtsranit i odpovídající záznam z tabulky ACCOUNTS a LOANS. Toto by ideálně ještě mělo proběhnout transakčně. Transakce ochrání databázi před softwarovou chybou a umožní provést sekvenci příkazů jako jednu nedělitelnou operaci. Pokus se zdaří, je potvrzena příkazem COMMIT, pokud se nezdaří, je databáze vráce do stevu před započetím transakce - to se nazývá ROLLBACK.
+
+# Závěr
+Mnou navržený model je navržený tak, aby byl robustní a v případě potřeby snadno rozšiřitelný. Je zde zajištěna vysoká úroveň integrity dat a umožňuje efektivní sledování a analýzu historických i aktuálních údajů. Lze ho využít pro jednorázové i pravidelné reporty pro pobočkovou síť.
