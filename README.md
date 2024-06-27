@@ -4,7 +4,7 @@
 
 Tento datový model byl naržen tak aby sledoval a reportoval aktuální i historické údaje o účtech, půjčkách, klientech, zaměstanancích a pobočkách. V modelu je zahrnuto 5 tabulek: ACCOUNTS, LOANS, CLIENT, WORKER a BRANCH.
 
-![datovy_model](CSOB_ukol.jpg "datovy_model")
+![datovy_model](datovy_model.jpg "datovy_model")
 
 Každá tabulka musí obsahovat minimálně jeden sloupec, který bude unikátní a nebude nulový (NOT NULL) - Bude mít takzavaně primírní klíč
 
