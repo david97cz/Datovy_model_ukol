@@ -25,6 +25,13 @@ Cizí klíče jsou následující:
 - Id zaměstanace v Tabulce WORKER odkazuje na id zaměstanace, který účet založil v tabulce ACCOUNT - Zajistí, že zaměstnanec bude odpovídat příslušnému účtu, který založil
 - Id pobočky v tabulce WORKER Odkazuje na id pobočky v tabulce BRANCH. -  Zajistí, že každý zaměstnanec je přiřazen existující pobočce.
 
+Pro přehled nově prodaných produktů v členění dle zaměstananců lze použít následující SELECT příkaz:
+```sql
+SELECT *
+FROM ACCOUNTS
+WHERE cid = 'konktertni_klient'
+```
+
 Pro zajištění možnosti reportovat data zpětně lze využít koncept tzv. dočasných tabulek (temporal tables)
 
 Pro prezentaci výsledných reportů je vhodné využít nástroje business intelligence (BI) - například Power BI od Microsoftu
