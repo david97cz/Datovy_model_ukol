@@ -1,4 +1,5 @@
 # Datový model pro reporting pro pobočkovou síť
+
 ## Vypracoval: David Mûller
 
 Tento datový model byl naržen tak aby sledoval a reportoval aktuální i historické údaje o účtech, půjčkách, klientech, zaměstanancích a pobočkách. V modelu je zahrnuto 5 tabulek: ACCOUNTS, LOANS, CLIENT, WORKER a BRANCH.
@@ -25,7 +26,7 @@ Cizí klíče jsou následující:
 - Id zaměstanace v Tabulce WORKER odkazuje na id zaměstanace, který účet založil v tabulce ACCOUNT - Zajistí, že zaměstnanec bude odpovídat příslušnému účtu, který založil
 - Id pobočky v tabulce WORKER Odkazuje na id pobočky v tabulce BRANCH. -  Zajistí, že každý zaměstnanec je přiřazen existující pobočce.
 
-Pro přehled nově prodaných produktů v členění dle zaměstananců lze použít následující SELECT příkaz:
+Pro přehled nově prodaných produktů v členění dle zaměstananců lze použít následující zjednodušený SELECT s využitím UNION příkazu:
 
 ```sql
 SELECT
@@ -43,6 +44,8 @@ FROM
     LOANS
 WHERE
    zam = @konkretni_zam
+
+ORDER BY product_id
 ```
 
 Pro zajištění možnosti reportovat data zpětně lze využít koncept tzv. dočasných tabulek (temporal tables)
