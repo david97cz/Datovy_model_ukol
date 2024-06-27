@@ -48,6 +48,6 @@ WHERE
 ORDER BY product_id
 ```
 
-Pro zajištění možnosti reportovat data zpětně lze využít koncept tzv. dočasných tabulek (temporal tables)
+Pro zajištění možnosti reportovat data zpětně lze využít koncept tzv. dočasných tabulek (temporal tables). Dočasné tabulky mohou zvýšit velikost databáze více než běžné tabulky, zejména pokud uchovávávají historická data po delší dobu. Zásady uchovávání historických dat jsou proto důležitým aspektem plánování a správy životního cyklu každé dočasné tabulky. Pro vytváření dočsných tabulek lze využít službu Azure SQL Database, která umožňuje zadat dobu uchovávání.
 
 Pro prezentaci výsledných reportů je vhodné využít nástroje business intelligence (BI) - například Power BI od Microsoftu
