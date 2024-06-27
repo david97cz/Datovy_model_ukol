@@ -26,7 +26,7 @@ Cizí klíče jsou následující:
 - Id zaměstanace v Tabulce WORKER odkazuje na id zaměstanace, který účet založil v tabulce ACCOUNT - Zajistí, že zaměstnanec bude odpovídat příslušnému účtu, který založil
 - Id pobočky v tabulce WORKER Odkazuje na id pobočky v tabulce BRANCH. -  Zajistí, že každý zaměstnanec je přiřazen existující pobočce.
 
-Pro přehled nově prodaných produktů v členění dle zaměstananců lze použít následující zjednodušený SELECT s využitím UNION příkazu:
+Z jednostlivých tabulek si lze snadno vyfiltrovat požadovaná data. Zde je ukázka toho, jak například získat přehled nově prodaných produktů v členění dle zaměstananců (lze použít následující zjednodušený SELECT s využitím UNION příkazu):
 
 ```sql
 SELECT
