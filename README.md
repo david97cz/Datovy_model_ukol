@@ -1,6 +1,6 @@
 # Datový model pro reporting pro pobočkovou síť
 
-## Vypracoval: David Mûller
+## Vypracoval: David Müller
 
 Tento datový model byl naržen tak aby sledoval a reportoval aktuální i historické údaje o účtech, půjčkách, klientech, zaměstanancích a pobočkách. V modelu je zahrnuto 5 tabulek: ACCOUNTS, LOANS, CLIENT, WORKER a BRANCH.
 
