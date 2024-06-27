@@ -1,18 +1,21 @@
 # Datový model pro reporting pro pobočkovou síť
 ## Vypracoval: David Mûller
+
+Tento datový model byl naržen tak aby sledoval a reportoval aktuální i historické údaje o účtech, půjčkách, klientech, zaměstanancích a pobočkách. V modelu je zahrnuto 5 tabulek: ACCOUNTS, LOANS, CLIENT, WORKER a BRANCH.
+
 ![datovy_model](CSOB_ukol.jpg "datovy_model")
 
 Každá tabulka musí obsahovat minimálně jeden sloupec, který bude unikátní a nebude nulový (NOT NULL) - Bude mít primírní klíč
 
 Primární klíče jsem zvolil následující:
 
-- Tabulka ACCOUNTS -  acn - číslo účtu musí být unikátní
+- Tabulka ACCOUNTS - sloupec acn - číslo účtu musí být unikátní
 - Tabulka LOANS -  vytvořil bych nový sloupec lid - Id půjčky, který by zajišťoval, ža každý záznam bude unikátní. Teoreticky by se mohlo stát, že bude existovat více záznamů LOANS se stejným číslem účtu.
-- Tabulka CLIENT - cid - id klienta
-- Tabulka BRANCH - pob - id pobočky
-- Tabulka WORKER - zam - id zaměstance
+- Tabulka CLIENT - sloupec cid - id klienta
+- Tabulka BRANCH - sloupec pob - id pobočky
+- Tabulka WORKER - sloupec zam - id zaměstance
 
-Pro zajištění integrity dat je také potřeba zvolit cizí klíče (foregin key), které se budou odkazovat na primární klíče v jiné tabulce
+Pro zajištění integrity dat jsem v modelu také popsal cizí klíče (foregin key), které se odkazují na primární klíče v jiné tabulce a zajišťují tak vzájemné propojení
 
 Cizí klíče jsou následující:
 
